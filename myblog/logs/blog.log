@@ -1,0 +1,15 @@
+INFO 2021-04-02 11:04:17,785 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 11:04:23,658 basehttp 157 "GET / HTTP/1.1" 200 16351
+INFO 2021-04-02 11:10:46,901 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\urls.py changed, reloading.
+INFO 2021-04-02 11:10:47,680 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 11:12:44,308 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\urls.py changed, reloading.
+INFO 2021-04-02 11:12:45,096 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 11:13:19,374 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 11:13:21,351 basehttp 157 "GET / HTTP/1.1" 200 16351
+INFO 2021-04-02 11:13:21,374 basehttp 157 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2021-04-02 11:13:21,577 basehttp 157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2021-04-02 11:13:21,577 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2021-04-02 11:13:21,577 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2021-04-02 11:13:59,954 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 11:14:01,742 urls 25 hello ,i am log
+INFO 2021-04-02 11:14:01,743 basehttp 157 "GET / HTTP/1.1" 200 4

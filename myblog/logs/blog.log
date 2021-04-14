@@ -13,3 +13,971 @@ INFO 2021-04-02 11:13:21,577 basehttp 157 "GET /static/admin/fonts/Roboto-Light-
 INFO 2021-04-02 11:13:59,954 autoreload 617 Watching for file changes with StatReloader
 INFO 2021-04-02 11:14:01,742 urls 25 hello ,i am log
 INFO 2021-04-02 11:14:01,743 basehttp 157 "GET / HTTP/1.1" 200 4
+INFO 2021-04-02 11:38:26,470 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 11:38:28,848 basehttp 157 "GET / HTTP/1.1" 200 16351
+INFO 2021-04-02 11:38:28,899 basehttp 157 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2021-04-02 11:38:29,127 basehttp 157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2021-04-02 11:38:29,127 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2021-04-02 11:38:29,128 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+WARNING 2021-04-02 11:38:42,244 basehttp 157 "GET /static/index.html HTTP/1.1" 404 1656
+INFO 2021-04-02 11:40:03,843 basehttp 157 "GET /static/index.html HTTP/1.1" 200 132
+INFO 2021-04-02 13:06:19,138 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\settings.py changed, reloading.
+INFO 2021-04-02 13:06:20,005 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 13:10:06,851 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\settings.py changed, reloading.
+INFO 2021-04-02 13:10:07,742 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 13:12:56,034 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 13:13:22,538 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\urls.py changed, reloading.
+INFO 2021-04-02 13:13:23,281 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 13:13:25,322 log 230 Not Found: /
+WARNING 2021-04-02 13:13:25,322 basehttp 157 "GET / HTTP/1.1" 404 2094
+INFO 2021-04-02 13:14:05,429 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\views.py changed, reloading.
+INFO 2021-04-02 13:14:06,594 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 13:14:42,083 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\views.py changed, reloading.
+INFO 2021-04-02 13:14:42,872 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 13:15:29,918 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\urls.py changed, reloading.
+INFO 2021-04-02 13:15:30,647 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 13:15:34,663 log 230 Not Found: /
+WARNING 2021-04-02 13:15:34,663 basehttp 157 "GET / HTTP/1.1" 404 2094
+WARNING 2021-04-02 13:15:36,095 log 230 Not Found: /
+WARNING 2021-04-02 13:15:36,096 basehttp 157 "GET / HTTP/1.1" 404 2094
+INFO 2021-04-02 13:15:50,642 basehttp 157 "GET /register HTTP/1.1" 301 0
+ERROR 2021-04-02 13:15:50,821 log 230 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\defaulttags.py", line 1034, in find_library
+    return parser.libraries[name]
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Development\Users\Workspaces\Python\blog\myblog\users\views.py", line 9, in get
+    return render(request, 'register.html')
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\defaulttags.py", line 1091, in load
+    lib = find_library(parser, name)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\defaulttags.py", line 1038, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'staticfiles' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+ERROR 2021-04-02 13:15:50,827 basehttp 157 "GET /register/ HTTP/1.1" 500 153425
+ERROR 2021-04-02 13:16:40,834 log 230 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'home'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Development\Users\Workspaces\Python\blog\myblog\users\views.py", line 9, in get
+    return render(request, 'register.html')
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'home' is not a registered namespace
+ERROR 2021-04-02 13:16:40,836 basehttp 157 "GET /register/ HTTP/1.1" 500 127978
+INFO 2021-04-02 13:18:11,650 basehttp 157 "GET /register/ HTTP/1.1" 200 5286
+INFO 2021-04-02 13:18:11,736 basehttp 157 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2021-04-02 13:18:11,738 basehttp 157 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12949
+INFO 2021-04-02 13:18:11,738 basehttp 157 "GET /static/js/common.js HTTP/1.1" 200 919
+INFO 2021-04-02 13:18:11,739 basehttp 157 "GET /static/js/register.js HTTP/1.1" 200 6523
+INFO 2021-04-02 13:18:11,742 basehttp 157 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140942
+INFO 2021-04-02 13:18:11,750 basehttp 157 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 300254
+WARNING 2021-04-02 13:18:11,997 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 13:18:11,998 basehttp 157 "GET /imagecode/?uuid=34746c27-8f93-41cf-a3a5-1a66367b8344 HTTP/1.1" 404 2184
+INFO 2021-04-02 13:18:50,949 basehttp 157 "GET /register/ HTTP/1.1" 200 5307
+WARNING 2021-04-02 13:18:51,219 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 13:18:51,219 basehttp 157 "GET /imagecode/?uuid=43759234-d1c5-4347-84bb-8f1aa0ab571a HTTP/1.1" 404 2184
+INFO 2021-04-02 13:18:52,246 basehttp 157 "GET /register/ HTTP/1.1" 200 5307
+WARNING 2021-04-02 13:18:52,353 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 13:18:52,354 basehttp 157 "GET /imagecode/?uuid=7b96ffb0-5b21-4e6a-a271-ed1adc978537 HTTP/1.1" 404 2184
+INFO 2021-04-02 13:18:52,963 basehttp 157 "GET /register/ HTTP/1.1" 200 5307
+WARNING 2021-04-02 13:18:53,125 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 13:18:53,126 basehttp 157 "GET /imagecode/?uuid=54365f38-48af-4f14-ad42-40c75f1dbeb4 HTTP/1.1" 404 2184
+INFO 2021-04-02 13:20:00,867 basehttp 157 "GET /register/ HTTP/1.1" 200 5298
+WARNING 2021-04-02 13:20:01,099 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 13:20:01,099 basehttp 157 "GET /imagecode/?uuid=1d6ebd54-f7ee-428f-89ea-1e640ce99445 HTTP/1.1" 404 2184
+INFO 2021-04-02 13:22:03,201 basehttp 157 "GET /register/ HTTP/1.1" 200 5300
+WARNING 2021-04-02 13:22:03,433 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 13:22:03,434 basehttp 157 "GET /imagecode/?uuid=727b8de5-acbd-457c-8289-b91f320586a9 HTTP/1.1" 404 2184
+INFO 2021-04-02 13:22:04,481 basehttp 157 "GET /register/ HTTP/1.1" 200 5300
+WARNING 2021-04-02 13:22:04,702 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 13:22:04,703 basehttp 157 "GET /imagecode/?uuid=f3aa96ed-1920-435e-9e91-c3ceb4497eed HTTP/1.1" 404 2184
+INFO 2021-04-02 13:22:05,237 basehttp 157 "GET /register/ HTTP/1.1" 200 5300
+WARNING 2021-04-02 13:22:05,437 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 13:22:05,438 basehttp 157 "GET /imagecode/?uuid=4dea42ff-f6ba-4331-96b0-b842d171fea9 HTTP/1.1" 404 2184
+INFO 2021-04-02 13:23:22,924 basehttp 157 "GET /register/ HTTP/1.1" 200 5300
+WARNING 2021-04-02 13:23:23,181 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 13:23:23,181 basehttp 157 "GET /imagecode/?uuid=39cf3880-5fd6-4a7c-a1f0-2e01a31b6f5e HTTP/1.1" 404 2184
+INFO 2021-04-02 13:51:21,215 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\models.py changed, reloading.
+INFO 2021-04-02 13:51:22,030 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 13:52:20,403 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\settings.py changed, reloading.
+INFO 2021-04-02 13:52:21,195 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 13:56:40,007 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 13:57:33,647 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 13:57:36,935 log 230 Not Found: /
+WARNING 2021-04-02 13:57:36,942 basehttp 157 "GET / HTTP/1.1" 404 2094
+INFO 2021-04-02 13:58:14,301 basehttp 157 "GET /register/ HTTP/1.1" 200 5300
+WARNING 2021-04-02 13:58:14,629 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 13:58:14,629 basehttp 157 "GET /imagecode/?uuid=e8492443-dae0-4e99-8e1f-b14c3eff1bc3 HTTP/1.1" 404 2184
+INFO 2021-04-02 14:00:31,858 basehttp 157 "GET /register/ HTTP/1.1" 200 5300
+WARNING 2021-04-02 14:00:32,096 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 14:00:32,097 basehttp 157 "GET /imagecode/?uuid=36bcd3ba-6f1c-4419-9a72-053a25f2f891 HTTP/1.1" 404 2184
+INFO 2021-04-02 14:00:32,796 basehttp 157 "GET /register/ HTTP/1.1" 200 5300
+WARNING 2021-04-02 14:00:32,950 log 230 Not Found: /imagecode/
+WARNING 2021-04-02 14:00:32,951 basehttp 157 "GET /imagecode/?uuid=18ac7b8e-ebd9-4ad4-8b5b-d2ebc8ff2e40 HTTP/1.1" 404 2184
+INFO 2021-04-02 14:28:27,031 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 14:29:17,450 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 14:31:22,512 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 14:31:26,276 log 230 Not Found: /
+WARNING 2021-04-02 14:31:26,277 basehttp 157 "GET / HTTP/1.1" 404 3130
+INFO 2021-04-02 14:31:37,251 basehttp 157 "GET /register/ HTTP/1.1" 200 5300
+INFO 2021-04-02 14:31:37,669 basehttp 157 "GET /imagecode/?uuid=647d79cf-076a-43a6-861d-7360f1591742 HTTP/1.1" 200 3072
+INFO 2021-04-02 14:31:41,019 basehttp 157 "GET /imagecode/?uuid=afe3dc14-6607-4787-854b-27ccd562e2b6 HTTP/1.1" 200 3260
+INFO 2021-04-02 14:31:41,956 basehttp 157 "GET /imagecode/?uuid=744bebeb-b423-4994-89c6-e9277455da77 HTTP/1.1" 200 2968
+INFO 2021-04-02 14:31:42,562 basehttp 157 "GET /imagecode/?uuid=b450663c-ba85-4ffd-9cae-933892461e2f HTTP/1.1" 200 3061
+INFO 2021-04-02 14:31:43,224 basehttp 157 "GET /imagecode/?uuid=e8bed297-7c54-4869-973f-3e4243487111 HTTP/1.1" 200 3625
+INFO 2021-04-02 14:31:43,660 basehttp 157 "GET /imagecode/?uuid=3534251e-668c-4a4c-8509-4fd2eb9aa6e9 HTTP/1.1" 200 3272
+INFO 2021-04-02 14:32:23,154 views 133 523473
+INFO 2021-04-02 14:32:44,535 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=8XWE&uuid=3534251e-668c-4a4c-8509-4fd2eb9aa6e9 HTTP/1.1" 200 63
+INFO 2021-04-02 14:34:41,037 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=8XWE&uuid=3534251e-668c-4a4c-8509-4fd2eb9aa6e9 HTTP/1.1" 200 72
+INFO 2021-04-02 14:34:41,062 basehttp 157 "GET /imagecode/?uuid=79e0ee56-83fa-4d4b-962e-69964fcf5c66 HTTP/1.1" 200 3256
+INFO 2021-04-02 14:34:47,673 basehttp 157 "GET /imagecode/?uuid=166ec19f-edac-47ca-98f9-85af5e690402 HTTP/1.1" 200 3625
+INFO 2021-04-02 14:34:56,240 views 133 025864
+INFO 2021-04-02 14:50:32,981 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 14:50:38,081 basehttp 157 "GET /register/ HTTP/1.1" 200 5300
+INFO 2021-04-02 14:50:38,223 basehttp 157 "GET /imagecode/?uuid=f196aeae-6df9-4598-a17b-fa3bc0af0892 HTTP/1.1" 200 3035
+INFO 2021-04-02 14:51:10,137 basehttp 157 "GET /register/ HTTP/1.1" 200 5300
+INFO 2021-04-02 14:51:10,365 basehttp 157 "GET /imagecode/?uuid=421bbaa0-ae15-4ced-9041-57ef0760d637 HTTP/1.1" 200 3262
+INFO 2021-04-02 14:51:25,055 basehttp 157 "GET /imagecode/?uuid=60c5e133-9861-4ba2-a9b8-a544c9a8ccfe HTTP/1.1" 200 2904
+INFO 2021-04-02 14:51:25,918 basehttp 157 "GET /imagecode/?uuid=01141838-3de1-40df-a625-303cdb87c9bd HTTP/1.1" 200 3130
+INFO 2021-04-02 14:51:26,782 basehttp 157 "GET /imagecode/?uuid=bc4114cb-181d-45ef-ac7f-8f19aac0f6bd HTTP/1.1" 200 3035
+INFO 2021-04-02 14:51:32,530 views 133 707825
+INFO 2021-04-02 14:51:53,904 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=AUEY&uuid=bc4114cb-181d-45ef-ac7f-8f19aac0f6bd HTTP/1.1" 200 63
+WARNING 2021-04-02 14:52:39,882 log 230 Bad Request: /register/
+WARNING 2021-04-02 14:52:39,883 basehttp 157 "POST /register/ HTTP/1.1" 400 21
+INFO 2021-04-02 14:52:43,752 basehttp 157 "GET /imagecode/?uuid=018c2fa8-19e2-47f6-a86e-e3fa2251668b HTTP/1.1" 200 3072
+INFO 2021-04-02 14:53:57,943 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\urls.py changed, reloading.
+INFO 2021-04-02 14:53:58,703 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 15:00:59,521 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 15:01:03,747 basehttp 157 "GET /register/ HTTP/1.1" 200 5300
+INFO 2021-04-02 15:01:03,993 basehttp 157 "GET /imagecode/?uuid=9a33c30a-4386-458f-b8fc-3c9eeddc4706 HTTP/1.1" 200 3120
+INFO 2021-04-02 15:01:39,356 basehttp 157 "GET /imagecode/?uuid=f521a9a8-66c4-4bca-b7be-2863d5844201 HTTP/1.1" 200 3152
+WARNING 2021-04-02 15:01:45,461 log 230 Not Found: /smscode/
+WARNING 2021-04-02 15:01:45,462 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=SUOS&uuid=f521a9a8-66c4-4bca-b7be-2863d5844201 HTTP/1.1" 404 3086
+WARNING 2021-04-02 15:01:46,314 log 230 Not Found: /smscode/
+WARNING 2021-04-02 15:01:46,315 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=SUOS&uuid=f521a9a8-66c4-4bca-b7be-2863d5844201 HTTP/1.1" 404 3086
+WARNING 2021-04-02 15:01:49,414 log 230 Not Found: /smscode/
+WARNING 2021-04-02 15:01:49,415 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=SUOS&uuid=f521a9a8-66c4-4bca-b7be-2863d5844201 HTTP/1.1" 404 3086
+INFO 2021-04-02 15:03:23,533 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\urls.py changed, reloading.
+INFO 2021-04-02 15:03:24,283 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 15:03:28,405 views 133 751843
+INFO 2021-04-02 15:03:28,890 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=SUOS&uuid=f521a9a8-66c4-4bca-b7be-2863d5844201 HTTP/1.1" 200 63
+ERROR 2021-04-02 15:03:47,403 log 230 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'home'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Development\Users\Workspaces\Python\blog\myblog\users\views.py", line 60, in post
+    response = redirect(reverse('home:index'))
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'home' is not a registered namespace
+ERROR 2021-04-02 15:03:47,406 basehttp 157 "POST /register/ HTTP/1.1" 500 91122
+INFO 2021-04-02 15:06:13,749 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\settings.py changed, reloading.
+INFO 2021-04-02 15:06:14,548 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 15:07:22,456 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\urls.py changed, reloading.
+INFO 2021-04-02 15:07:23,197 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 15:07:38,975 log 230 Forbidden (CSRF token missing or incorrect.): /register/
+WARNING 2021-04-02 15:07:38,976 basehttp 157 "POST /register/ HTTP/1.1" 403 2513
+WARNING 2021-04-02 15:09:52,990 log 230 Forbidden (CSRF token missing or incorrect.): /register/
+WARNING 2021-04-02 15:09:52,991 basehttp 157 "POST /register/ HTTP/1.1" 403 2513
+WARNING 2021-04-02 15:10:04,921 log 230 Forbidden (CSRF token missing or incorrect.): /register/
+WARNING 2021-04-02 15:10:04,922 basehttp 157 "POST /register/ HTTP/1.1" 403 2513
+INFO 2021-04-02 15:14:17,649 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-04-02 15:14:20,600 log 230 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'blog.tb_category' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Development\Users\Workspaces\Python\blog\myblog\home\views.py", line 19, in get
+    category = ArticleCategory.objects.get(id=cat_id)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\models\query.py", line 425, in get
+    num = len(clone)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\models\query.py", line 269, in __len__
+    self._fetch_all()
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\models\query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'blog.tb_category' doesn't exist")
+ERROR 2021-04-02 15:14:20,614 basehttp 157 "GET / HTTP/1.1" 500 167802
+INFO 2021-04-02 15:16:09,614 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 15:16:15,054 log 230 Not Found: /
+WARNING 2021-04-02 15:16:15,055 basehttp 157 "GET / HTTP/1.1" 404 15
+ERROR 2021-04-02 15:16:25,180 log 230 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'home'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Development\Users\Workspaces\Python\blog\myblog\users\views.py", line 14, in get
+    return render(request, 'register.html')
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'home' is not a registered namespace
+ERROR 2021-04-02 15:16:25,184 basehttp 157 "GET /register/ HTTP/1.1" 500 129387
+INFO 2021-04-02 15:18:23,227 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 15:18:25,590 log 230 Not Found: /
+WARNING 2021-04-02 15:18:25,591 basehttp 157 "GET / HTTP/1.1" 404 15
+ERROR 2021-04-02 15:18:29,276 log 230 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'users'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Development\Users\Workspaces\Python\blog\myblog\users\views.py", line 14, in get
+    return render(request, 'register.html')
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Development\anaconda\envs\blog\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'users' is not a registered namespace
+ERROR 2021-04-02 15:18:29,281 basehttp 157 "GET /register/ HTTP/1.1" 500 130505
+INFO 2021-04-02 15:19:41,326 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\urls.py changed, reloading.
+INFO 2021-04-02 15:19:42,074 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 15:19:44,985 basehttp 157 "GET /register/ HTTP/1.1" 200 5433
+INFO 2021-04-02 15:19:45,317 basehttp 157 "GET /imagecode/?uuid=561fdcca-c817-4c48-a65e-f03cdf03f57e HTTP/1.1" 200 3499
+INFO 2021-04-02 15:19:52,232 basehttp 157 "GET /imagecode/?uuid=8af3fc82-fc19-41c5-ae73-eff548aa7f1e HTTP/1.1" 200 3167
+INFO 2021-04-02 15:20:16,557 views 133 273479
+INFO 2021-04-02 15:20:17,035 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=XLWR&uuid=8af3fc82-fc19-41c5-ae73-eff548aa7f1e HTTP/1.1" 200 63
+WARNING 2021-04-02 15:20:36,602 log 230 Bad Request: /register/
+WARNING 2021-04-02 15:20:36,604 basehttp 157 "POST /register/ HTTP/1.1" 400 12
+INFO 2021-04-02 15:22:39,023 basehttp 157 "GET /login/ HTTP/1.1" 200 3192
+INFO 2021-04-02 15:22:39,134 basehttp 157 "GET /static/js/login.js HTTP/1.1" 200 710
+WARNING 2021-04-02 15:22:46,682 log 230 Bad Request: /login/
+WARNING 2021-04-02 15:22:46,682 basehttp 157 "POST /login/ HTTP/1.1" 400 30
+INFO 2021-04-02 15:23:11,587 basehttp 157 "GET /register/ HTTP/1.1" 200 5433
+INFO 2021-04-02 15:23:11,714 basehttp 157 "GET /imagecode/?uuid=424dfe4c-26fc-426c-8ae3-0297fa3b8b2f HTTP/1.1" 200 3278
+INFO 2021-04-02 15:23:59,080 views 133 811212
+INFO 2021-04-02 15:23:59,529 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=dkbt&uuid=424dfe4c-26fc-426c-8ae3-0297fa3b8b2f HTTP/1.1" 200 63
+INFO 2021-04-02 15:24:12,363 basehttp 157 "POST /register/ HTTP/1.1" 302 0
+WARNING 2021-04-02 15:24:12,396 log 230 Not Found: /
+WARNING 2021-04-02 15:24:12,397 basehttp 157 "GET / HTTP/1.1" 404 15
+WARNING 2021-04-02 15:24:20,456 log 230 Not Found: /
+WARNING 2021-04-02 15:24:20,457 basehttp 157 "GET / HTTP/1.1" 404 15
+INFO 2021-04-02 15:24:26,161 basehttp 157 "GET /login HTTP/1.1" 301 0
+INFO 2021-04-02 15:24:26,170 basehttp 157 "GET /login/ HTTP/1.1" 200 3192
+INFO 2021-04-02 15:24:26,228 basehttp 157 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-04-02 15:24:26,240 basehttp 157 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2021-04-02 15:24:26,264 basehttp 157 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2021-04-02 15:24:26,268 basehttp 157 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2021-04-02 15:24:26,275 basehttp 157 "GET /static/js/common.js HTTP/1.1" 304 0
+WARNING 2021-04-02 15:24:38,556 log 230 Bad Request: /login/
+WARNING 2021-04-02 15:24:38,557 basehttp 157 "POST /login/ HTTP/1.1" 400 24
+INFO 2021-04-02 15:25:56,384 basehttp 157 "GET /register/ HTTP/1.1" 200 5433
+INFO 2021-04-02 15:25:56,502 basehttp 157 "GET /imagecode/?uuid=89b52cc2-1ffb-424c-ae2c-7f955139e2af HTTP/1.1" 200 3085
+INFO 2021-04-02 15:26:47,283 basehttp 157 "GET /imagecode/?uuid=2a503a34-3247-4e66-bd7e-87cd00f3260f HTTP/1.1" 200 3019
+INFO 2021-04-02 15:26:48,131 basehttp 157 "GET /imagecode/?uuid=ba2929a7-45f2-4167-adf7-2246a5658368 HTTP/1.1" 200 3357
+INFO 2021-04-02 15:26:53,195 views 133 590452
+INFO 2021-04-02 15:26:53,630 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=SHXX&uuid=ba2929a7-45f2-4167-adf7-2246a5658368 HTTP/1.1" 200 63
+INFO 2021-04-02 15:27:07,611 basehttp 157 "POST /register/ HTTP/1.1" 302 0
+WARNING 2021-04-02 15:27:07,643 log 230 Not Found: /
+WARNING 2021-04-02 15:27:07,645 basehttp 157 "GET / HTTP/1.1" 404 15
+INFO 2021-04-02 15:27:15,582 basehttp 157 "GET /login/ HTTP/1.1" 200 3192
+INFO 2021-04-02 15:27:24,707 basehttp 157 "POST /login/ HTTP/1.1" 302 0
+WARNING 2021-04-02 15:27:24,720 log 230 Not Found: /
+WARNING 2021-04-02 15:27:24,720 basehttp 157 "GET / HTTP/1.1" 404 15
+INFO 2021-04-02 15:28:07,524 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\urls.py changed, reloading.
+INFO 2021-04-02 15:28:08,293 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 15:28:11,337 log 230 Not Found: /
+WARNING 2021-04-02 15:28:11,338 basehttp 157 "GET / HTTP/1.1" 404 15
+WARNING 2021-04-02 15:28:12,564 log 230 Not Found: /
+WARNING 2021-04-02 15:28:12,565 basehttp 157 "GET / HTTP/1.1" 404 15
+INFO 2021-04-02 15:28:14,539 basehttp 157 "GET /login/ HTTP/1.1" 200 3192
+INFO 2021-04-02 15:28:27,014 basehttp 157 "POST /login/ HTTP/1.1" 302 0
+WARNING 2021-04-02 15:28:27,048 log 230 Not Found: /
+WARNING 2021-04-02 15:28:27,049 basehttp 157 "GET / HTTP/1.1" 404 15
+INFO 2021-04-02 15:37:00,465 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\urls.py changed, reloading.
+INFO 2021-04-02 15:37:01,234 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 15:38:36,982 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\views.py changed, reloading.
+INFO 2021-04-02 15:38:37,781 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 15:38:43,065 basehttp 157 "GET /login/ HTTP/1.1" 200 3192
+INFO 2021-04-02 15:38:46,980 basehttp 157 "GET /register/ HTTP/1.1" 200 5433
+INFO 2021-04-02 15:38:47,044 basehttp 157 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2021-04-02 15:38:47,149 basehttp 157 "GET /imagecode/?uuid=e0178d8a-8a89-4cd2-8639-4faea0ac636f HTTP/1.1" 200 3142
+INFO 2021-04-02 16:48:06,155 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\views.py changed, reloading.
+INFO 2021-04-02 16:48:07,053 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 16:48:14,109 log 230 Not Found: /
+WARNING 2021-04-02 16:48:14,110 basehttp 157 "GET / HTTP/1.1" 404 15
+INFO 2021-04-02 16:48:24,899 basehttp 157 "GET /login HTTP/1.1" 301 0
+INFO 2021-04-02 16:48:24,925 basehttp 157 "GET /login/ HTTP/1.1" 200 3192
+WARNING 2021-04-02 16:48:34,610 log 230 Bad Request: /login/
+WARNING 2021-04-02 16:48:34,611 basehttp 157 "POST /login/ HTTP/1.1" 400 24
+INFO 2021-04-02 16:48:56,672 basehttp 157 "POST /login/ HTTP/1.1" 302 0
+WARNING 2021-04-02 16:48:56,716 log 230 Not Found: /
+WARNING 2021-04-02 16:48:56,716 basehttp 157 "GET / HTTP/1.1" 404 15
+INFO 2021-04-02 16:50:47,557 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\urls.py changed, reloading.
+INFO 2021-04-02 16:50:48,462 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 17:50:18,690 log 230 Not Found: /
+WARNING 2021-04-02 17:50:18,691 basehttp 157 "GET / HTTP/1.1" 404 15
+WARNING 2021-04-02 17:50:29,627 log 230 Not Found: /index
+WARNING 2021-04-02 17:50:29,628 basehttp 157 "GET /index HTTP/1.1" 404 3668
+INFO 2021-04-02 17:51:19,621 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\home\urls.py changed, reloading.
+INFO 2021-04-02 17:51:20,426 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 17:51:20,921 basehttp 157 "GET /index HTTP/1.1" 301 0
+WARNING 2021-04-02 17:51:20,937 log 230 Not Found: /index/
+WARNING 2021-04-02 17:51:20,938 basehttp 157 "GET /index/ HTTP/1.1" 404 15
+INFO 2021-04-02 21:39:11,587 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\home\views.py changed, reloading.
+INFO 2021-04-02 21:39:15,254 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 21:40:33,742 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\home\views.py changed, reloading.
+INFO 2021-04-02 21:40:34,574 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 21:41:09,125 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\home\views.py changed, reloading.
+INFO 2021-04-02 21:41:09,874 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 21:42:55,355 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\home\views.py changed, reloading.
+INFO 2021-04-02 21:42:56,124 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 21:43:09,782 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\home\urls.py changed, reloading.
+INFO 2021-04-02 21:43:10,530 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 21:43:23,281 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\home\urls.py changed, reloading.
+INFO 2021-04-02 21:43:24,052 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 21:43:26,975 log 230 Not Found: /
+WARNING 2021-04-02 21:43:26,976 basehttp 157 "GET / HTTP/1.1" 404 3472
+INFO 2021-04-02 21:43:55,468 basehttp 157 "GET /index/ HTTP/1.1" 200 123
+INFO 2021-04-02 21:50:21,437 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-02 21:50:24,241 log 230 Not Found: /
+WARNING 2021-04-02 21:50:24,242 basehttp 157 "GET / HTTP/1.1" 404 3641
+INFO 2021-04-02 21:50:40,308 basehttp 157 "GET /login/ HTTP/1.1" 200 3198
+INFO 2021-04-02 21:50:40,411 basehttp 157 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-04-02 21:50:40,414 basehttp 157 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2021-04-02 21:50:40,423 basehttp 157 "GET /static/js/login.js HTTP/1.1" 304 0
+INFO 2021-04-02 21:50:40,423 basehttp 157 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2021-04-02 21:50:40,423 basehttp 157 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2021-04-02 21:50:40,424 basehttp 157 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2021-04-02 21:50:51,734 basehttp 157 "POST /login/ HTTP/1.1" 302 0
+WARNING 2021-04-02 21:50:51,747 log 230 Not Found: /index/
+WARNING 2021-04-02 21:50:51,748 basehttp 157 "GET /index/ HTTP/1.1" 404 15
+INFO 2021-04-02 21:57:17,065 basehttp 157 "GET /writeblog HTTP/1.1" 301 0
+INFO 2021-04-02 21:57:17,411 basehttp 157 "GET /writeblog/ HTTP/1.1" 200 5193
+INFO 2021-04-02 21:57:17,458 basehttp 157 "GET /static/js/write_blog.js HTTP/1.1" 200 521
+INFO 2021-04-02 21:57:17,461 basehttp 157 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 2100
+INFO 2021-04-02 21:57:17,488 basehttp 157 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 691941
+INFO 2021-04-02 21:57:17,825 basehttp 157 "GET /static/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 200 348
+INFO 2021-04-02 21:57:17,858 basehttp 157 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 200 18822
+INFO 2021-04-02 21:57:17,859 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 200 46921
+INFO 2021-04-02 21:57:17,885 basehttp 157 "GET /static/ckeditor/ckeditor/styles.js?t=I3I8 HTTP/1.1" 200 5583
+INFO 2021-04-02 21:57:17,906 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css HTTP/1.1" 200 381
+INFO 2021-04-02 21:57:17,907 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css HTTP/1.1" 200 419
+INFO 2021-04-02 21:57:17,917 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1082
+INFO 2021-04-02 21:57:17,918 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2021-04-02 21:57:17,918 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css HTTP/1.1" 200 1306
+INFO 2021-04-02 21:57:17,973 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=95e5d83 HTTP/1.1" 200 12421
+INFO 2021-04-02 21:57:18,014 basehttp 157 "GET /static/ckeditor/ckeditor/contents.css?t=I3I8 HTTP/1.1" 200 2954
+WARNING 2021-04-02 21:58:01,225 log 230 Bad Request: /writeblog/
+WARNING 2021-04-02 21:58:01,225 basehttp 157 "POST /writeblog/ HTTP/1.1" 400 12
+INFO 2021-04-02 22:08:57,655 basehttp 157 "GET /admin/ HTTP/1.1" 302 0
+INFO 2021-04-02 22:08:58,170 basehttp 157 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2349
+INFO 2021-04-02 22:08:58,268 basehttp 157 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2021-04-02 22:08:58,339 basehttp 157 "GET /static/admin/css/base.css HTTP/1.1" 200 16307
+INFO 2021-04-02 22:08:58,340 basehttp 157 "GET /static/admin/css/login.css HTTP/1.1" 200 1185
+INFO 2021-04-02 22:08:58,340 basehttp 157 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+INFO 2021-04-02 22:08:58,352 basehttp 157 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18344
+INFO 2021-04-02 22:08:58,409 basehttp 157 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-04-02 22:08:58,524 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2021-04-02 22:08:58,524 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2021-04-02 22:08:58,524 basehttp 157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2021-04-02 22:09:34,863 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\settings.py changed, reloading.
+INFO 2021-04-02 22:09:35,821 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 22:10:09,415 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\settings.py changed, reloading.
+INFO 2021-04-02 22:10:10,251 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 22:10:25,190 basehttp 157 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2337
+INFO 2021-04-02 22:12:29,519 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-02 22:12:34,320 basehttp 157 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2021-04-02 22:12:34,516 basehttp 157 "GET /admin/ HTTP/1.1" 200 3545
+INFO 2021-04-02 22:12:34,592 basehttp 157 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2021-04-02 22:12:34,732 basehttp 157 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2021-04-02 22:12:34,732 basehttp 157 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2021-04-02 22:12:41,178 basehttp 157 "GET /admin/home/articlecategory/add/ HTTP/1.1" 200 6325
+INFO 2021-04-02 22:12:41,263 basehttp 157 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2021-04-02 22:12:41,285 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+INFO 2021-04-02 22:12:41,289 basehttp 157 "GET /static/admin/js/calendar.js HTTP/1.1" 200 7788
+INFO 2021-04-02 22:12:41,296 basehttp 157 "GET /static/admin/js/core.js HTTP/1.1" 200 5418
+INFO 2021-04-02 22:12:41,328 basehttp 157 "GET /static/admin/css/forms.css HTTP/1.1" 200 8423
+INFO 2021-04-02 22:12:41,362 basehttp 157 "GET /static/admin/js/actions.js HTTP/1.1" 200 6783
+INFO 2021-04-02 22:12:41,367 basehttp 157 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6078
+INFO 2021-04-02 22:12:41,367 basehttp 157 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8632
+INFO 2021-04-02 22:12:41,367 basehttp 157 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19750
+INFO 2021-04-02 22:12:41,375 basehttp 157 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2021-04-02 22:12:41,401 basehttp 157 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2021-04-02 22:12:41,467 basehttp 157 "GET /static/admin/css/widgets.css HTTP/1.1" 200 10592
+INFO 2021-04-02 22:12:41,470 basehttp 157 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2021-04-02 22:12:41,480 basehttp 157 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2021-04-02 22:12:41,499 basehttp 157 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2021-04-02 22:12:41,625 basehttp 157 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2021-04-02 22:12:41,631 basehttp 157 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2021-04-02 22:12:47,729 basehttp 157 "POST /admin/home/articlecategory/add/ HTTP/1.1" 302 0
+INFO 2021-04-02 22:12:47,791 basehttp 157 "GET /admin/home/articlecategory/add/ HTTP/1.1" 200 6575
+INFO 2021-04-02 22:12:47,863 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+INFO 2021-04-02 22:12:47,998 basehttp 157 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2021-04-02 22:12:53,413 basehttp 157 "POST /admin/home/articlecategory/add/ HTTP/1.1" 302 0
+INFO 2021-04-02 22:12:53,468 basehttp 157 "GET /admin/home/articlecategory/add/ HTTP/1.1" 200 6573
+INFO 2021-04-02 22:12:53,533 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+INFO 2021-04-02 22:12:57,330 basehttp 157 "POST /admin/home/articlecategory/add/ HTTP/1.1" 302 0
+INFO 2021-04-02 22:12:57,383 basehttp 157 "GET /admin/home/articlecategory/add/ HTTP/1.1" 200 6571
+INFO 2021-04-02 22:12:57,450 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+INFO 2021-04-02 22:12:59,305 basehttp 157 "POST /admin/home/articlecategory/add/ HTTP/1.1" 302 0
+INFO 2021-04-02 22:12:59,486 basehttp 157 "GET /admin/home/articlecategory/ HTTP/1.1" 200 6680
+INFO 2021-04-02 22:12:59,565 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+INFO 2021-04-02 22:12:59,576 basehttp 157 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6302
+INFO 2021-04-02 22:12:59,680 basehttp 157 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2021-04-02 22:13:06,872 basehttp 157 "GET /writeblog/ HTTP/1.1" 200 5537
+INFO 2021-04-02 22:13:32,583 basehttp 157 "POST /writeblog/ HTTP/1.1" 302 0
+INFO 2021-04-02 22:13:32,630 basehttp 157 "GET /index/ HTTP/1.1" 200 6070
+INFO 2021-04-02 22:13:32,685 basehttp 157 "GET /static/common/jquery.pagination.css HTTP/1.1" 200 549
+INFO 2021-04-02 22:13:32,685 basehttp 157 "GET /static/common/common.css HTTP/1.1" 200 381
+INFO 2021-04-02 22:13:32,691 basehttp 157 "GET /static/md_css/monokai.css HTTP/1.1" 200 4118
+INFO 2021-04-02 22:13:32,736 basehttp 157 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97168
+INFO 2021-04-02 22:13:32,817 basehttp 157 "GET /static/js/index.js HTTP/1.1" 200 590
+INFO 2021-04-02 22:13:32,826 basehttp 157 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+WARNING 2021-04-02 22:13:32,843 log 230 Not Found: /article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-02 22:13:32,843 basehttp 157 "GET /article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 3764
+WARNING 2021-04-02 22:13:34,475 log 230 Not Found: /article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-02 22:13:34,476 basehttp 157 "GET /article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 3764
+INFO 2021-04-02 22:14:06,914 basehttp 157 "GET /index/ HTTP/1.1" 200 6070
+INFO 2021-04-02 22:14:07,031 basehttp 157 "GET /static/md_css/monokai.css HTTP/1.1" 200 4118
+INFO 2021-04-02 22:14:07,039 basehttp 157 "GET /static/common/common.css HTTP/1.1" 200 381
+INFO 2021-04-02 22:14:07,039 basehttp 157 "GET /static/common/jquery.pagination.css HTTP/1.1" 200 549
+INFO 2021-04-02 22:14:07,104 basehttp 157 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97168
+INFO 2021-04-02 22:14:07,381 basehttp 157 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12949
+INFO 2021-04-02 22:14:07,398 basehttp 157 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140942
+INFO 2021-04-02 22:14:07,411 basehttp 157 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 300254
+INFO 2021-04-02 22:14:07,437 basehttp 157 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2021-04-02 22:14:07,458 basehttp 157 "GET /static/js/common.js HTTP/1.1" 200 919
+INFO 2021-04-02 22:14:07,464 basehttp 157 "GET /static/js/index.js HTTP/1.1" 200 590
+INFO 2021-04-02 22:14:07,472 basehttp 157 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+WARNING 2021-04-02 22:14:07,488 log 230 Not Found: /article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-02 22:14:07,489 basehttp 157 "GET /article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 3764
+WARNING 2021-04-02 22:14:08,820 log 230 Not Found: /article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-02 22:14:08,820 basehttp 157 "GET /article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 3764
+INFO 2021-04-02 22:14:12,116 basehttp 157 "GET /login/ HTTP/1.1" 200 3198
+INFO 2021-04-02 22:14:12,140 basehttp 157 "GET /static/js/login.js HTTP/1.1" 200 710
+INFO 2021-04-02 22:14:47,775 basehttp 157 "GET /writeblog/ HTTP/1.1" 302 0
+WARNING 2021-04-02 22:14:47,786 log 230 Not Found: /accounts/login/
+WARNING 2021-04-02 22:14:47,786 basehttp 157 "GET /accounts/login/?next=/writeblog/ HTTP/1.1" 404 3721
+INFO 2021-04-02 22:15:09,419 basehttp 157 "GET /writeblog HTTP/1.1" 301 0
+INFO 2021-04-02 22:15:09,425 basehttp 157 "GET /writeblog/ HTTP/1.1" 302 0
+WARNING 2021-04-02 22:15:09,435 log 230 Not Found: /accounts/login/
+WARNING 2021-04-02 22:15:09,436 basehttp 157 "GET /accounts/login/?next=/writeblog/ HTTP/1.1" 404 3721
+INFO 2021-04-02 22:15:16,063 basehttp 157 "GET /login/ HTTP/1.1" 200 3198
+INFO 2021-04-02 22:15:24,158 basehttp 157 "POST /login/ HTTP/1.1" 302 0
+INFO 2021-04-02 22:15:24,181 basehttp 157 "GET /index/ HTTP/1.1" 200 6070
+WARNING 2021-04-02 22:15:24,224 log 230 Not Found: /article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-02 22:15:24,225 basehttp 157 "GET /article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 3764
+INFO 2021-04-02 22:15:27,714 basehttp 157 "GET /writeblog/ HTTP/1.1" 200 5537
+INFO 2021-04-02 22:15:27,738 basehttp 157 "GET /static/js/write_blog.js HTTP/1.1" 200 521
+INFO 2021-04-02 22:15:27,739 basehttp 157 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 2100
+INFO 2021-04-02 22:15:27,751 basehttp 157 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 691941
+INFO 2021-04-02 22:15:27,880 basehttp 157 "GET /static/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 200 348
+INFO 2021-04-02 22:15:27,895 basehttp 157 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 200 18822
+INFO 2021-04-02 22:15:27,896 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 200 46921
+INFO 2021-04-02 22:15:27,909 basehttp 157 "GET /static/ckeditor/ckeditor/styles.js?t=I3I8 HTTP/1.1" 200 5583
+INFO 2021-04-02 22:15:27,926 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css HTTP/1.1" 200 1306
+INFO 2021-04-02 22:15:27,926 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css HTTP/1.1" 200 381
+INFO 2021-04-02 22:15:27,926 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1082
+INFO 2021-04-02 22:15:27,927 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css HTTP/1.1" 200 419
+INFO 2021-04-02 22:15:27,932 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2021-04-02 22:15:27,975 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=95e5d83 HTTP/1.1" 200 12421
+INFO 2021-04-02 22:15:27,999 basehttp 157 "GET /static/ckeditor/ckeditor/contents.css?t=I3I8 HTTP/1.1" 200 2954
+INFO 2021-04-02 22:15:49,937 basehttp 157 "GET /writeblog/ HTTP/1.1" 302 0
+WARNING 2021-04-02 22:15:49,949 log 230 Not Found: /accounts/login/
+WARNING 2021-04-02 22:15:49,950 basehttp 157 "GET /accounts/login/?next=/writeblog/ HTTP/1.1" 404 3721
+INFO 2021-04-07 16:10:34,152 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-07 16:12:27,885 basehttp 157 "GET /register/ HTTP/1.1" 200 5439
+INFO 2021-04-07 16:12:28,133 basehttp 157 "GET /imagecode/?uuid=0f27bb0d-0182-4039-82d5-4edd31b7428a HTTP/1.1" 200 3175
+WARNING 2021-04-07 16:12:35,696 log 230 Not Found: /
+WARNING 2021-04-07 16:12:35,697 basehttp 157 "GET / HTTP/1.1" 404 3641
+INFO 2021-04-07 16:12:47,129 basehttp 157 "GET /register/ HTTP/1.1" 200 5439
+INFO 2021-04-07 16:12:47,215 basehttp 157 "GET /imagecode/?uuid=d1900215-7de9-4d1b-a082-978f8f384aa5 HTTP/1.1" 200 3127
+INFO 2021-04-07 16:13:03,772 basehttp 157 "GET /imagecode/?uuid=8840718d-f34f-4708-9c69-b5c7c946bb57 HTTP/1.1" 200 3242
+INFO 2021-04-07 16:13:04,540 basehttp 157 "GET /imagecode/?uuid=66f5fc4f-9767-4220-8b85-6300f4d19036 HTTP/1.1" 200 3350
+INFO 2021-04-07 16:13:13,848 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=HXRq&uuid=66f5fc4f-9767-4220-8b85-6300f4d19036 HTTP/1.1" 200 84
+INFO 2021-04-07 16:13:13,871 basehttp 157 "GET /imagecode/?uuid=8079ad18-8e59-4df7-b3b8-05c1936c8ff0 HTTP/1.1" 200 3314
+INFO 2021-04-07 16:13:19,028 basehttp 157 "GET /imagecode/?uuid=68a06002-9cbb-466c-b95a-0a32d6391a32 HTTP/1.1" 200 3051
+INFO 2021-04-07 16:13:19,916 basehttp 157 "GET /imagecode/?uuid=43dd3da2-4600-4ec8-b3c3-6a6072d2ea1f HTTP/1.1" 200 3013
+INFO 2021-04-07 16:13:26,093 views 133 138982
+INFO 2021-04-07 16:13:26,856 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=XPEB&uuid=43dd3da2-4600-4ec8-b3c3-6a6072d2ea1f HTTP/1.1" 200 63
+WARNING 2021-04-07 16:13:39,684 log 230 Bad Request: /register/
+WARNING 2021-04-07 16:13:39,686 basehttp 157 "POST /register/ HTTP/1.1" 400 12
+INFO 2021-04-12 11:29:09,444 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-12 11:29:19,644 log 230 Not Found: /
+WARNING 2021-04-12 11:29:19,645 basehttp 157 "GET / HTTP/1.1" 404 3641
+WARNING 2021-04-12 11:29:19,963 log 230 Not Found: /favicon.ico
+WARNING 2021-04-12 11:29:19,964 basehttp 157 "GET /favicon.ico HTTP/1.1" 404 3692
+INFO 2021-04-12 11:29:42,948 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\urls.py changed, reloading.
+INFO 2021-04-12 11:29:43,727 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-12 11:29:46,875 basehttp 157 "GET / HTTP/1.1" 200 3198
+INFO 2021-04-12 11:29:46,955 basehttp 157 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2021-04-12 11:29:46,956 basehttp 157 "GET /static/js/login.js HTTP/1.1" 200 710
+INFO 2021-04-12 11:29:47,002 basehttp 157 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140942
+INFO 2021-04-12 11:29:47,021 basehttp 157 "GET /static/js/common.js HTTP/1.1" 200 919
+INFO 2021-04-12 11:29:47,069 basehttp 157 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12949
+INFO 2021-04-12 11:29:47,080 basehttp 157 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 300254
+INFO 2021-04-12 11:30:00,163 basehttp 157 "GET /register/ HTTP/1.1" 200 5433
+INFO 2021-04-12 11:30:00,246 basehttp 157 "GET /static/js/register.js HTTP/1.1" 200 6523
+INFO 2021-04-12 11:30:00,725 basehttp 157 "GET /imagecode/?uuid=1ab95493-1e83-4aa2-8094-984de4af3b82 HTTP/1.1" 200 3212
+INFO 2021-04-12 11:30:03,610 basehttp 157 "GET /imagecode/?uuid=20e048f3-1f9c-4209-a130-7295496d1207 HTTP/1.1" 200 3104
+INFO 2021-04-12 11:30:04,289 basehttp 157 "GET /imagecode/?uuid=826fbb20-c7c3-4f47-b1d0-ecc951357a61 HTTP/1.1" 200 3362
+INFO 2021-04-12 11:30:04,864 basehttp 157 "GET /imagecode/?uuid=5dbe00d2-8b10-4536-8376-ccc1cd0724c9 HTTP/1.1" 200 3339
+INFO 2021-04-12 11:30:05,320 basehttp 157 "GET /imagecode/?uuid=07706746-7ede-4c4f-be3b-7c269a8aee05 HTTP/1.1" 200 3194
+INFO 2021-04-12 11:30:05,855 basehttp 157 "GET /imagecode/?uuid=96e2ebd7-c030-42d7-893a-a919fe020e63 HTTP/1.1" 200 3122
+INFO 2021-04-12 11:31:51,886 basehttp 157 "GET /index/ HTTP/1.1" 200 6064
+INFO 2021-04-12 11:31:51,964 basehttp 157 "GET /static/common/common.css HTTP/1.1" 200 381
+INFO 2021-04-12 11:31:51,964 basehttp 157 "GET /static/common/jquery.pagination.css HTTP/1.1" 200 549
+INFO 2021-04-12 11:31:51,973 basehttp 157 "GET /static/md_css/monokai.css HTTP/1.1" 200 4118
+INFO 2021-04-12 11:31:52,018 basehttp 157 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97168
+INFO 2021-04-12 11:31:52,079 basehttp 157 "GET /static/js/index.js HTTP/1.1" 200 590
+INFO 2021-04-12 11:31:52,089 basehttp 157 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+WARNING 2021-04-12 11:31:52,107 log 230 Not Found: /article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-12 11:31:52,108 basehttp 157 "GET /article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 3758
+WARNING 2021-04-12 11:31:53,539 log 230 Not Found: /article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-12 11:31:53,540 basehttp 157 "GET /article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 3758
+INFO 2021-04-12 11:31:59,244 basehttp 157 "GET /imagecode/?uuid=fe672880-8772-47cb-abb5-f53f4fb8b94c HTTP/1.1" 200 3111
+INFO 2021-04-12 11:49:03,053 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\views.py changed, reloading.
+INFO 2021-04-12 11:49:04,065 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-12 11:49:11,616 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\views.py changed, reloading.
+INFO 2021-04-12 11:49:12,354 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-14 10:39:24,078 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-14 10:39:30,135 basehttp 157 "GET / HTTP/1.1" 200 3198
+INFO 2021-04-14 10:39:30,203 basehttp 157 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2021-04-14 10:39:30,203 basehttp 157 "GET /static/js/login.js HTTP/1.1" 200 710
+INFO 2021-04-14 10:39:30,221 basehttp 157 "GET /static/js/common.js HTTP/1.1" 200 919
+INFO 2021-04-14 10:39:30,241 basehttp 157 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-04-14 10:39:30,266 basehttp 157 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12949
+INFO 2021-04-14 10:39:30,304 basehttp 157 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 300254
+WARNING 2021-04-14 10:39:31,043 log 230 Not Found: /favicon.ico
+WARNING 2021-04-14 10:39:31,043 basehttp 157 "GET /favicon.ico HTTP/1.1" 404 3686
+WARNING 2021-04-14 10:39:41,943 log 230 Bad Request: /
+WARNING 2021-04-14 10:39:41,944 basehttp 157 "POST / HTTP/1.1" 400 24
+INFO 2021-04-14 10:39:48,562 basehttp 157 "GET /register/ HTTP/1.1" 200 5433
+INFO 2021-04-14 10:39:48,625 basehttp 157 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2021-04-14 10:39:48,911 basehttp 157 "GET /imagecode/?uuid=04d83bbf-8932-41fc-978a-8f7819abb644 HTTP/1.1" 200 3176
+INFO 2021-04-14 10:39:58,615 basehttp 157 "GET /imagecode/?uuid=d5482428-b4e6-4ec6-b216-9130e57d035f HTTP/1.1" 200 3164
+INFO 2021-04-14 10:40:00,495 basehttp 157 "GET /imagecode/?uuid=20ab9f75-d044-4748-a9f2-f90d37847828 HTTP/1.1" 200 3046
+INFO 2021-04-14 10:40:08,782 views 133 896239
+INFO 2021-04-14 10:40:18,526 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=BSQR&uuid=20ab9f75-d044-4748-a9f2-f90d37847828 HTTP/1.1" 200 63
+WARNING 2021-04-14 10:40:36,974 log 230 Bad Request: /register/
+WARNING 2021-04-14 10:40:36,974 basehttp 157 "POST /register/ HTTP/1.1" 400 12
+INFO 2021-04-14 10:41:16,915 basehttp 157 "GET /imagecode/?uuid=b60eeb11-cffa-4eea-a68b-0b150717bd71 HTTP/1.1" 200 3076
+INFO 2021-04-14 10:41:22,067 basehttp 157 "GET / HTTP/1.1" 200 3198
+WARNING 2021-04-14 10:41:32,584 log 230 Bad Request: /
+WARNING 2021-04-14 10:41:32,585 basehttp 157 "POST / HTTP/1.1" 400 24
+INFO 2021-04-14 10:41:36,439 basehttp 157 "GET /forgetpassword/ HTTP/1.1" 200 5450
+INFO 2021-04-14 10:41:36,516 basehttp 157 "GET /static/js/forget_password.js HTTP/1.1" 200 6514
+INFO 2021-04-14 10:41:36,634 basehttp 157 "GET /imagecode/?uuid=808093f4-8191-4479-a60c-6507477b3558 HTTP/1.1" 200 3113
+INFO 2021-04-14 10:41:53,186 views 133 532417
+INFO 2021-04-14 10:42:03,114 basehttp 157 "GET /smscode/?mobile=13576085156&image_code=BPGU&uuid=808093f4-8191-4479-a60c-6507477b3558 HTTP/1.1" 200 63
+INFO 2021-04-14 10:42:07,510 basehttp 157 "POST /forgetpassword/ HTTP/1.1" 302 0
+INFO 2021-04-14 10:42:07,520 basehttp 157 "GET / HTTP/1.1" 200 3198
+INFO 2021-04-14 10:42:14,668 basehttp 157 "POST / HTTP/1.1" 302 0
+INFO 2021-04-14 10:42:14,928 basehttp 157 "GET /index/ HTTP/1.1" 200 6064
+INFO 2021-04-14 10:42:14,986 basehttp 157 "GET /static/common/jquery.pagination.css HTTP/1.1" 200 549
+INFO 2021-04-14 10:42:14,986 basehttp 157 "GET /static/common/common.css HTTP/1.1" 200 381
+INFO 2021-04-14 10:42:14,999 basehttp 157 "GET /static/md_css/monokai.css HTTP/1.1" 200 4118
+INFO 2021-04-14 10:42:15,051 basehttp 157 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97168
+INFO 2021-04-14 10:42:15,087 basehttp 157 "GET /static/js/index.js HTTP/1.1" 200 590
+INFO 2021-04-14 10:42:15,096 basehttp 157 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+WARNING 2021-04-14 10:42:15,110 log 230 Not Found: /article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 10:42:15,111 basehttp 157 "GET /article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 3758
+WARNING 2021-04-14 10:42:16,824 log 230 Not Found: /article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 10:42:16,825 basehttp 157 "GET /article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 3758
+INFO 2021-04-14 10:42:25,343 basehttp 157 "GET /center/ HTTP/1.1" 200 4264
+INFO 2021-04-14 10:42:25,398 basehttp 157 "GET /static/js/center.js HTTP/1.1" 200 522
+INFO 2021-04-14 10:42:36,812 basehttp 157 "POST /center/ HTTP/1.1" 302 0
+INFO 2021-04-14 10:42:36,831 basehttp 157 "GET /center/ HTTP/1.1" 200 4378
+WARNING 2021-04-14 10:42:36,900 log 230 Not Found: /avatar/20210414/1-1G1011I92K91.jpg
+WARNING 2021-04-14 10:42:36,908 basehttp 157 "GET /avatar/20210414/1-1G1011I92K91.jpg HTTP/1.1" 404 3755
+WARNING 2021-04-14 10:42:36,992 log 230 Not Found: /avatar/20210414/1-1G1011I92K91.jpg
+WARNING 2021-04-14 10:42:36,993 basehttp 157 "GET /avatar/20210414/1-1G1011I92K91.jpg HTTP/1.1" 404 3755
+WARNING 2021-04-14 11:07:05,375 log 230 Not Found: /article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:07:05,376 basehttp 157 "GET /article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 3758
+INFO 2021-04-14 11:08:51,341 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\settings.py changed, reloading.
+INFO 2021-04-14 11:08:52,149 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-14 11:09:25,046 basehttp 157 "GET /center/ HTTP/1.1" 200 4384
+WARNING 2021-04-14 11:09:25,095 log 230 Not Found: /media/avatar/20210414/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:09:25,096 basehttp 157 "GET /media/avatar/20210414/1-1G1011I92K91.jpg HTTP/1.1" 404 3773
+WARNING 2021-04-14 11:09:25,163 log 230 Not Found: /media/avatar/20210414/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:09:25,163 basehttp 157 "GET /media/avatar/20210414/1-1G1011I92K91.jpg HTTP/1.1" 404 3773
+INFO 2021-04-14 11:09:26,626 basehttp 157 "GET /center/ HTTP/1.1" 200 4384
+WARNING 2021-04-14 11:09:26,702 log 230 Not Found: /media/avatar/20210414/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:09:26,703 basehttp 157 "GET /media/avatar/20210414/1-1G1011I92K91.jpg HTTP/1.1" 404 3773
+WARNING 2021-04-14 11:09:26,761 log 230 Not Found: /media/avatar/20210414/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:09:26,762 basehttp 157 "GET /media/avatar/20210414/1-1G1011I92K91.jpg HTTP/1.1" 404 3773
+INFO 2021-04-14 11:09:34,467 basehttp 157 "POST /center/ HTTP/1.1" 302 0
+INFO 2021-04-14 11:09:34,489 basehttp 157 "GET /center/ HTTP/1.1" 200 4384
+WARNING 2021-04-14 11:09:34,560 log 230 Not Found: /media/avatar/20210414/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:09:34,560 basehttp 157 "GET /media/avatar/20210414/1-1G1011I92K91.jpg HTTP/1.1" 404 3773
+INFO 2021-04-14 11:09:37,345 basehttp 157 "GET /index/ HTTP/1.1" 200 6070
+WARNING 2021-04-14 11:09:37,466 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:09:37,466 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 3776
+INFO 2021-04-14 11:10:56,107 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\myblog\urls.py changed, reloading.
+INFO 2021-04-14 11:10:56,855 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-14 11:11:00,211 basehttp 157 "GET /index/ HTTP/1.1" 200 6070
+WARNING 2021-04-14 11:11:00,288 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:11:00,289 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+WARNING 2021-04-14 11:11:00,430 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:11:00,431 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 11:11:02,810 basehttp 157 "GET /index/ HTTP/1.1" 200 6070
+WARNING 2021-04-14 11:11:02,955 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:11:02,955 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+WARNING 2021-04-14 11:11:03,032 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:11:03,032 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 11:11:06,229 basehttp 157 "GET /center/ HTTP/1.1" 200 4384
+INFO 2021-04-14 11:11:06,292 basehttp 157 "GET /media/avatar/20210414/1-1G1011I92K91.jpg HTTP/1.1" 200 37953
+INFO 2021-04-14 11:14:28,593 basehttp 157 "GET /writeblog/ HTTP/1.1" 200 5531
+INFO 2021-04-14 11:14:28,658 basehttp 157 "GET /static/js/write_blog.js HTTP/1.1" 200 521
+INFO 2021-04-14 11:14:28,686 basehttp 157 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 2100
+INFO 2021-04-14 11:14:28,702 basehttp 157 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 691941
+INFO 2021-04-14 11:14:28,910 basehttp 157 "GET /static/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 200 348
+INFO 2021-04-14 11:14:28,948 basehttp 157 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 200 18822
+INFO 2021-04-14 11:14:28,969 basehttp 157 "GET /static/ckeditor/ckeditor/styles.js?t=I3I8 HTTP/1.1" 200 5583
+INFO 2021-04-14 11:14:28,969 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 200 46921
+INFO 2021-04-14 11:14:28,996 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css HTTP/1.1" 200 419
+INFO 2021-04-14 11:14:28,997 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css HTTP/1.1" 200 381
+INFO 2021-04-14 11:14:29,000 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1082
+INFO 2021-04-14 11:14:29,005 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css HTTP/1.1" 200 1306
+INFO 2021-04-14 11:14:29,005 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2021-04-14 11:14:29,064 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=95e5d83 HTTP/1.1" 200 12421
+INFO 2021-04-14 11:14:29,110 basehttp 157 "GET /static/ckeditor/ckeditor/contents.css?t=I3I8 HTTP/1.1" 200 2954
+INFO 2021-04-14 11:15:19,049 basehttp 157 "POST /writeblog/ HTTP/1.1" 302 0
+INFO 2021-04-14 11:15:19,119 basehttp 157 "GET /index/ HTTP/1.1" 200 7517
+INFO 2021-04-14 11:15:19,256 basehttp 157 "GET /media/article/20210414/%E4%B8%8B%E8%BD%BD.jpg HTTP/1.1" 200 20708
+WARNING 2021-04-14 11:15:19,258 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:15:19,260 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 11:15:28,642 basehttp 157 "GET /detail/?id=2 HTTP/1.1" 200 7155
+WARNING 2021-04-14 11:15:28,736 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1812
+INFO 2021-04-14 11:15:28,750 basehttp 157 "GET /static/js/detail.js HTTP/1.1" 200 1294
+INFO 2021-04-14 11:15:28,753 basehttp 157 "GET /static/prism/prism.css HTTP/1.1" 200 4033
+INFO 2021-04-14 11:15:29,007 basehttp 157 "GET /static/ckeditor/ckeditor/lang/en.js?t=I3I8 HTTP/1.1" 200 19039
+INFO 2021-04-14 11:15:29,037 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/codesnippet/plugin.js?t=I3I8 HTTP/1.1" 200 3835
+INFO 2021-04-14 11:15:29,042 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/plugin.js?t=I3I8 HTTP/1.1" 200 4333
+INFO 2021-04-14 11:15:29,076 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/codesnippet/lang/en.js?t=I3I8 HTTP/1.1" 200 373
+WARNING 2021-04-14 11:15:29,109 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1812
+INFO 2021-04-14 11:15:29,135 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png?t=I3I8 HTTP/1.1" 200 597
+WARNING 2021-04-14 11:15:29,170 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1815
+INFO 2021-04-14 11:15:36,187 basehttp 157 "GET /index/ HTTP/1.1" 200 7517
+INFO 2021-04-14 11:15:36,233 basehttp 157 "GET /media/article/20210414/%E4%B8%8B%E8%BD%BD.jpg HTTP/1.1" 304 0
+WARNING 2021-04-14 11:15:36,239 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 11:15:36,240 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:22:03,622 basehttp 157 "GET /detail/?id=1 HTTP/1.1" 200 7168
+WARNING 2021-04-14 14:22:03,672 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1812
+WARNING 2021-04-14 14:22:04,026 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1812
+WARNING 2021-04-14 14:22:04,075 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1815
+INFO 2021-04-14 14:22:13,489 basehttp 157 "POST /detail/?id=1 HTTP/1.1" 302 0
+INFO 2021-04-14 14:22:13,592 basehttp 157 "GET /detail/?id=1 HTTP/1.1" 200 7637
+WARNING 2021-04-14 14:22:13,659 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1812
+WARNING 2021-04-14 14:22:13,739 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1812
+WARNING 2021-04-14 14:22:13,992 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1812
+WARNING 2021-04-14 14:22:14,049 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1815
+INFO 2021-04-14 14:22:20,528 basehttp 157 "POST /detail/?id=1 HTTP/1.1" 302 0
+INFO 2021-04-14 14:22:20,643 basehttp 157 "GET /detail/?id=1 HTTP/1.1" 200 8100
+WARNING 2021-04-14 14:22:20,761 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1812
+WARNING 2021-04-14 14:22:20,804 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1812
+WARNING 2021-04-14 14:22:21,016 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 404 1812
+WARNING 2021-04-14 14:22:21,056 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 404 1815
+INFO 2021-04-14 14:33:00,148 basehttp 157 "GET /index/ HTTP/1.1" 200 7517
+INFO 2021-04-14 14:33:00,232 basehttp 157 "GET /media/article/20210414/%E4%B8%8B%E8%BD%BD.jpg HTTP/1.1" 304 0
+WARNING 2021-04-14 14:33:00,296 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:33:00,296 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:33:17,729 basehttp 157 "GET /?cat_id=2 HTTP/1.1" 200 3198
+INFO 2021-04-14 14:33:22,552 basehttp 157 "GET /index/ HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:33:22,673 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:33:22,673 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:33:25,683 basehttp 157 "GET /?cat_id=2 HTTP/1.1" 200 3198
+INFO 2021-04-14 14:33:26,869 basehttp 157 "GET /index/ HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:33:26,985 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:33:26,986 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+WARNING 2021-04-14 14:33:27,076 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:33:27,077 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:33:28,835 basehttp 157 "GET /?cat_id=3 HTTP/1.1" 200 3198
+INFO 2021-04-14 14:33:30,962 basehttp 157 "GET /index/ HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:33:31,099 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:33:31,099 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:33:39,407 basehttp 157 "GET /?cat_id=2 HTTP/1.1" 200 3198
+INFO 2021-04-14 14:33:45,119 basehttp 157 "GET /index/ HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:33:45,293 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:33:45,294 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:35:24,035 basehttp 157 "GET /?cat_id=3 HTTP/1.1" 200 3198
+WARNING 2021-04-14 14:36:36,731 log 230 Not Found: /detail/cat_id=3
+WARNING 2021-04-14 14:36:36,732 basehttp 157 "GET /detail/cat_id=3 HTTP/1.1" 404 3826
+INFO 2021-04-14 14:40:19,962 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\home\urls.py changed, reloading.
+INFO 2021-04-14 14:40:20,765 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-04-14 14:40:32,670 log 230 Not Found: /index/
+WARNING 2021-04-14 14:40:32,671 basehttp 157 "GET /index/ HTTP/1.1" 404 3791
+WARNING 2021-04-14 14:40:44,045 log 230 Not Found: /index/
+WARNING 2021-04-14 14:40:44,045 basehttp 157 "GET /index/ HTTP/1.1" 404 3791
+WARNING 2021-04-14 14:40:45,011 log 230 Not Found: /index/
+WARNING 2021-04-14 14:40:45,012 basehttp 157 "GET /index/ HTTP/1.1" 404 3791
+INFO 2021-04-14 14:40:48,838 basehttp 157 "GET / HTTP/1.1" 200 3192
+INFO 2021-04-14 14:40:57,667 basehttp 157 "POST / HTTP/1.1" 302 0
+INFO 2021-04-14 14:40:57,689 basehttp 157 "GET / HTTP/1.1" 200 3192
+INFO 2021-04-14 14:41:45,230 autoreload 240 D:\Development\Users\Workspaces\Python\blog\myblog\users\urls.py changed, reloading.
+INFO 2021-04-14 14:41:46,020 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-04-14 14:41:48,960 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:41:49,168 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:41:49,169 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:41:57,502 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:41:57,587 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:41:57,587 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+WARNING 2021-04-14 14:41:57,729 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:41:57,730 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:41:58,655 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:41:58,721 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:41:58,722 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:01,085 basehttp 157 "GET /?cat_id=2 HTTP/1.1" 200 4622
+INFO 2021-04-14 14:42:02,574 basehttp 157 "GET /?cat_id=3 HTTP/1.1" 200 4622
+INFO 2021-04-14 14:42:04,515 basehttp 157 "GET /?cat_id=1 HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:04,580 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:04,581 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:07,679 basehttp 157 "GET /?cat_id=2 HTTP/1.1" 200 4622
+INFO 2021-04-14 14:42:08,529 basehttp 157 "GET /?cat_id=3 HTTP/1.1" 200 4622
+INFO 2021-04-14 14:42:09,597 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:09,657 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:09,657 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:12,329 basehttp 157 "GET /logout/ HTTP/1.1" 302 0
+INFO 2021-04-14 14:42:12,364 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:12,433 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:12,434 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:15,380 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:15,447 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:15,448 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:16,361 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:16,423 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:16,424 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:17,300 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:17,367 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:17,368 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:18,403 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:18,465 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:18,466 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:23,037 basehttp 157 "GET /?cat_id=2 HTTP/1.1" 200 4622
+INFO 2021-04-14 14:42:23,983 basehttp 157 "GET /?cat_id=3 HTTP/1.1" 200 4622
+INFO 2021-04-14 14:42:25,145 basehttp 157 "GET /?cat_id=1 HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:25,196 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:25,197 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:25,841 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:25,901 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:25,901 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:27,696 basehttp 157 "GET /login/ HTTP/1.1" 200 3192
+INFO 2021-04-14 14:42:38,255 basehttp 157 "POST /login/ HTTP/1.1" 302 0
+INFO 2021-04-14 14:42:38,316 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:38,433 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:38,434 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+WARNING 2021-04-14 14:42:38,546 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:38,547 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:41,509 basehttp 157 "GET /writeblog/ HTTP/1.1" 200 5531
+INFO 2021-04-14 14:42:46,109 basehttp 157 "GET /center/ HTTP/1.1" 200 4384
+INFO 2021-04-14 14:42:46,171 basehttp 157 "GET /media/avatar/20210414/1-1G1011I92K91.jpg HTTP/1.1" 304 0
+INFO 2021-04-14 14:42:48,227 basehttp 157 "GET /logout/ HTTP/1.1" 302 0
+INFO 2021-04-14 14:42:48,260 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:48,358 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:48,358 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:50,378 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:50,441 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:50,442 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:51,319 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:42:51,380 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:42:51,381 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:42:54,065 basehttp 157 "GET /writeblog/ HTTP/1.1" 302 0
+INFO 2021-04-14 14:42:54,076 basehttp 157 "GET /login/?next=/writeblog/ HTTP/1.1" 200 3192
+INFO 2021-04-14 14:44:19,440 basehttp 157 "GET /login/?next=/writeblog/ HTTP/1.1" 200 3192
+INFO 2021-04-14 14:44:20,558 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:44:20,676 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:44:20,677 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:44:23,549 basehttp 157 "GET /?cat_id=2 HTTP/1.1" 200 4622
+INFO 2021-04-14 14:44:24,986 basehttp 157 "GET /?cat_id=3 HTTP/1.1" 200 4622
+INFO 2021-04-14 14:44:27,439 basehttp 157 "GET /?cat_id=1 HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:44:27,516 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:44:27,516 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 14:44:31,167 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 14:44:31,242 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 14:44:31,242 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 15:25:25,430 basehttp 157 "GET /?cat_id=2 HTTP/1.1" 200 4622
+INFO 2021-04-14 15:25:26,944 basehttp 157 "GET /?cat_id=3 HTTP/1.1" 200 4622
+INFO 2021-04-14 15:25:29,257 basehttp 157 "GET /?cat_id=1 HTTP/1.1" 200 7517
+INFO 2021-04-14 15:25:29,394 basehttp 157 "GET /media/article/20210414/%E4%B8%8B%E8%BD%BD.jpg HTTP/1.1" 304 0
+WARNING 2021-04-14 15:25:29,435 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 15:25:29,436 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+WARNING 2021-04-14 15:25:29,497 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 15:25:29,498 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+INFO 2021-04-14 15:25:30,462 basehttp 157 "GET / HTTP/1.1" 200 7517
+WARNING 2021-04-14 15:25:30,550 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 15:25:30,551 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
+WARNING 2021-04-14 15:25:30,665 log 230 Not Found: /media/article/20210402/1-1G1011I92K91.jpg
+WARNING 2021-04-14 15:25:30,665 basehttp 157 "GET /media/article/20210402/1-1G1011I92K91.jpg HTTP/1.1" 404 1874
